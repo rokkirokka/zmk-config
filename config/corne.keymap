@@ -16,25 +16,33 @@
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp T>;
+            bindings =
+                <&kp LCTRL &kp T>,
+                <&macro_tap>;
         };
         horzFlip: horzFlip {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp F>;
+            bindings =
+                <&kp LCTRL &kp F>,
+                <&macro_tap>;
         };
         canvasSize: canvasSize {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp LALT &kp LCTRL &kp C>;
+            bindings =
+                <&kp LALT &kp LCTRL &kp C>,
+                <&macro_tap>;
         };
         imageSize: imageSize {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_ALT &kp I>;
+            bindings =
+                <&kp LCTRL &kp LEFT_ALT &kp I>,
+                <&macro_tap>;
         };
     };
 

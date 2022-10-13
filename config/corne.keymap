@@ -17,8 +17,12 @@
             label = "new_macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LCTRL &kp T>,
-                <&macro_tap>;
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp T>,
+                <&macro_release>,
+                <&kp LCTRL>;
         };
         horzFlip: horzFlip {
             compatible = "zmk,behavior-macro";

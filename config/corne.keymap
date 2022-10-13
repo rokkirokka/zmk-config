@@ -14,7 +14,7 @@
     macros {
         transformPS: transformPS {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "PS_transform";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -26,7 +26,7 @@
         };
         horzFlip: horzFlip {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "PS_horzFlip";
             #binding-cells = <0>;
             bindings =
                 <&kp LCTRL &kp F>,
@@ -34,7 +34,7 @@
         };
         canvasSize: canvasSize {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "PS_canvasSize";
             #binding-cells = <0>;
             bindings =
                 <&kp LALT &kp LCTRL &kp C>,
@@ -42,11 +42,15 @@
         };
         imageSize: imageSize {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "PS_imageSize";
             #binding-cells = <0>;
             bindings =
-                <&kp LCTRL &kp LEFT_ALT &kp I>,
-                <&macro_tap>;
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_release>,
+                <&kp LCTRL &kp LALT>;
         };
     };
 
@@ -76,10 +80,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-    &kp TAB        &kp N1        &kp N2             &kp N3            &kp N4        &kp N5    &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
- &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
-  &kp LSHFT         &to 3  &out OUT_TOG  &ext_power EP_OFF  &ext_power EP_ON        &trans    &trans    &trans    &trans     &trans  &trans    &trans
-                                                  &kp LGUI            &trans     &kp SPACE   &kp RET    &trans  &kp RALT
+    &kp TAB        &kp N1        &kp N2             &kp N3            &kp N4             &kp N5    &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
+ &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3       &bt BT_SEL 4  &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
+  &kp LSHFT         &to 3  &out OUT_TOG  &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG    &trans    &trans    &trans     &trans  &trans    &trans
+                                                  &kp LGUI            &trans          &kp SPACE   &kp RET    &trans  &kp RALT
             >;
         };
 

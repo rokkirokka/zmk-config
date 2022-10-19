@@ -102,7 +102,7 @@
             bindings = <
     &kp TAB        &kp N1        &kp N2             &kp N3            &kp N4             &kp N5    &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3       &bt BT_SEL 4  &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
-  &kp LSHFT         &to 3  &out OUT_TOG  &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG    &trans    &trans    &trans     &trans  &trans    &trans
+     &tog 5         &to 3  &out OUT_TOG  &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG    &trans    &trans    &trans     &trans  &trans    &trans
                                                   &kp LGUI            &trans          &kp SPACE   &kp RET    &trans  &kp RALT
             >;
         };
@@ -137,6 +137,33 @@
     &trans       &trans      &trans    &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
  &horzFlip  &canvasSize  &imageSize     &kp L   &kp M      &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans
                                      &kp LGUI  &trans          &to 0  &trans  &trans  &trans
+            >;
+        };
+
+        ArtStudio {
+            bindings = <
+        &kp ESC   &kp Q   &kp W         &kp E   &kp R   &kp T  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp LEFT_SHIFT   &kp A   &kp S         &kp D   &kp F   &kp G  &trans  &trans  &trans  &trans  &trans  &trans
+      &kp LCTRL   &kp Z   &kp X         &kp C   &kp V   &kp B  &trans  &trans  &trans  &trans  &trans  &trans
+                                 &kp LEFT_ALT   &mo 6   &mo 7  &trans  &trans  &trans
+            >;
+        };
+
+        ArtStudio1 {
+            bindings = <
+    &kp F1   &kp Y   &kp U             &kp I      &kp O          &kp P  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp LSHFT   &kp H   &kp J             &kp K      &kp L  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp SPACE   &kp N   &kp M  &kp GREATER_THAN  &kp UNDER      &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans
+                                   &kp LCTRL     &trans          &mo 0  &trans  &trans  &trans
+            >;
+        };
+
+        ArtStudio2 {
+            bindings = <
+ &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_4    &kp NUMBER_6  &kp NUMBER_8     &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans  &trans
+       &kp F3        &kp F4          &kp F5    &kp UP_ARROW     &kp SLASH  &kp KP_MULTIPLY  &trans  &trans  &trans  &trans  &trans  &trans
+    &kp COMMA       &kp DOT  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT     &kp QUESTION  &trans  &trans  &trans  &trans  &trans  &trans
+                                                  &kp TILDE      &kp BSLH           &trans  &trans  &trans  &trans
             >;
         };
     };

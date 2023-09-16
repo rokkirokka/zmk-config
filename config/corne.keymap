@@ -6,7 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -73,6 +73,24 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Saturation {
+            bindings = <&kt LS(U)>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
+            layers = <5>;
+        };
+
+        Levels {
+            bindings = <&kt LS(L)>;
+            key-positions = <2 0>;
+            timeout-ms = <50>;
+            layers = <5>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -84,10 +102,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp ESC  &kp Q  &kp W     &kp E  &kp R      &kp T    &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BSPC
-&kp LSHFT  &kp A  &kp S     &kp D  &kp F      &kp G    &kp H  &kp J      &kp K    &kp L  &kp SEMI   &kp SQT
-&kp LCTRL  &kp Z  &kp X     &kp C  &kp V      &kp B    &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
-                         &kp LALT  &mo 1  &kp SPACE  &kp RET  &mo 2   &kp RALT
+&kp ESC    &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LSHFT  &kp A  &kp S  &kp D     &kp F  &kp G      &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LALT  &mo 1  &kp SPACE  &kp RET  &mo 2  &kp RALT
             >;
         };
 
@@ -99,10 +117,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-   &kp TAB        &kp N1        &kp N2             &kp N3            &kp N4             &kp N5    &kp N6    &kp N7    &kp N8     &kp N9          &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3       &bt BT_SEL 4  &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &kp SCROLLLOCK    &trans
-    &tog 5         &to 3         &kp A  &ext_power EP_OFF  &ext_power EP_ON  &ext_power EP_TOG    &trans    &trans    &trans     &trans          &trans    &trans
-                                                 &kp LGUI            &trans          &kp SPACE   &kp RET    &trans  &kp RALT
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp N6    &kp N7    &kp N8    &kp N9     &kp N0          &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp SCROLLLOCK  &trans
+&tog 5      &to 3         &kp A         &none         &none         &trans        &trans    &trans    &trans    &trans     &trans          &trans
+                                        &kp LGUI      &trans        &kp SPACE     &kp RET   &trans    &kp RALT
             >;
         };
 
@@ -114,55 +132,55 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
-&kp LCTRL    &trans  &trans    &trans    &trans     &trans  &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT    &trans  &trans    &trans    &trans     &trans  &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI    &trans  &kp SPACE    &kp RET     &trans         &kp RALT
+&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &trans    &trans  &trans    &trans    &trans     &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &trans    &trans  &trans    &trans    &trans     &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                             &kp LGUI  &trans    &kp SPACE  &kp RET    &trans     &kp RALT
             >;
         };
 
         Photoshop {
             bindings = <
-  &kp ESC  &kp Q         &kp W         &kp E  &kp R  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp A  &transformPS         &kp D  &kp F          &kp G  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp Z         &kp X         &kp C  &kp V          &kp B  &trans  &trans  &trans  &trans  &trans  &trans
-                                &kp LEFT_ALT  &mo 4      &kp SPACE  &trans  &trans  &trans
+&kp ESC    &kp Q  &kp W         &kp E         &kp R  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp A  &transformPS  &kp D         &kp F  &kp G          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp Z  &kp X         &kp C         &kp V  &kp B          &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp LEFT_ALT  &mo 4  &kp SPACE      &trans  &trans  &trans
             >;
         };
 
         Photoshop02 {
             bindings = <
-   &kp N1       &kp N2      &kp N5    &kp N7  &kp N8         &kp N0  &trans  &trans  &trans  &trans  &trans  &trans
-   &trans       &trans      &trans    &trans  &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
-&horzFlip  &canvasSize  &imageSize     &kp L   &kp M      &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans
-                                    &kp LGUI  &trans          &to 0  &trans  &trans  &trans
+&kp N1     &kp N2       &kp N5      &kp N7    &kp N8  &kp N0         &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans       &trans      &trans    &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
+&horzFlip  &canvasSize  &imageSize  &kp L     &kp M   &kp ENTER      &trans  &trans  &trans  &trans  &trans  &trans
+                                    &kp LGUI  &trans  &to 0          &trans  &trans  &trans
             >;
         };
 
         ArtStudio {
             bindings = <
-       &kp ESC  &kp Q  &kp W         &kp E  &kp R  &kp T  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp A  &kp S         &kp D  &kp F  &kp G  &trans  &trans  &trans  &trans  &trans  &trans
-     &kp LCTRL  &kp Z  &kp X         &kp C  &kp V  &kp B  &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC         &kp Q  &kp W  &kp E         &kp R  &kp T  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &kp G  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &kp B  &trans  &trans  &trans  &trans  &trans  &trans
                               &kp LEFT_ALT  &mo 6  &mo 7  &trans  &trans  &trans
             >;
         };
 
         ArtStudio1 {
             bindings = <
-   &kp F1  &kp Y  &kp U             &kp I      &kp O          &kp P  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp H  &kp J             &kp K      &kp L  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
-&kp SPACE  &kp N  &kp M  &kp GREATER_THAN  &kp UNDER      &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans
-                                &kp LCTRL     &trans          &mo 0  &trans  &trans  &trans
+&kp F1     &kp Y  &kp U  &kp I             &kp O      &kp P          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp H  &kp J  &kp K             &kp L      &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SPACE  &kp N  &kp M  &kp GREATER_THAN  &kp UNDER  &kp ENTER      &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp LCTRL         &trans     &mo 0          &trans  &trans  &trans
             >;
         };
 
         ArtStudio2 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_5     &kp NUMBER_6  &trans  &trans  &trans  &trans  &trans  &trans
-&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0    &kp UP_ARROW  &kp RIGHT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_WIN     &kp COMMA       &kp DOT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
-                                            &kp QUESTION        &kp BSLH           &trans  &trans  &trans  &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6     &trans  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp UP_ARROW    &kp RIGHT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_WIN  &kp COMMA     &kp DOT       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
+                                          &kp QUESTION    &kp BSLH        &trans           &trans  &trans  &trans
             >;
         };
     };

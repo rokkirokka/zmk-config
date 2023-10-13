@@ -106,6 +106,13 @@
             timeout-ms = <200>;
             layers = <0>;
         };
+
+        Photoshop_Mask_Selection {
+            bindings = <&kp LS(LA(LC(P)))>;
+            key-positions = <24 15>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
     };
 
     keymap {

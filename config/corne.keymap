@@ -93,6 +93,12 @@
             key-positions = <29 24>;
             layers = <0>;
         };
+
+        Photoshop_ClippingMask {
+            bindings = <&kp LC(LA(G))>;
+            key-positions = <24 36 15>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -121,10 +127,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LC(Y)         &mt F LC(H)  &kp N2         &kp N3            &kp N4               &mt LC(L) LS(LA(LC(L)))  &none  &kp N7    &kp N8    &kp N9     &kp N0          &kp BSPC
-&kp LEFT_SHIFT    &none        &none          &none             &mt LC(F) LA(LC(A))  &mt LC(U) LS(LC(U))      &none  &kp DOWN  &kp UP    &kp RIGHT  &kp SCROLLLOCK  &trans
-&kp LEFT_CONTROL  &kp L        &kp LS(LC(X))  &mt LC(F2) LC(N)  &none                &mt LC(M) LS(LA(LC(M)))  &none  &trans    &trans    &trans     &trans          &trans
-                                              &none             &trans               &to 9                    &none  &trans    &kp RALT
+&kp LC(Y)         &mt F LC(H)  &kp LS(LC(COMMA))  &kp F5             &kp LS(LA(LC(H)))    &mt LC(L) LS(LA(LC(L)))  &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT    &none        &kp LS(M)          &kp LS(LC(M))      &mt LC(F) LA(LC(A))  &mt LC(U) LS(LC(U))      &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &kp L        &kp LS(LC(X))      &mt LC(F2) LC(N)   &none                &mt LC(M) LS(LA(LC(M)))  &none  &none  &none  &none  &none  &none
+                                                  &kp LS(LA(LC(G)))  &trans               &to 9                    &none  &none  &none
             >;
         };
 

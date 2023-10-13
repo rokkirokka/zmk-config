@@ -146,7 +146,7 @@
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-                     &none  &none  &none  &none  &none  &none
+                     &none  &mo 3  &mo 8  &none  &none  &none
             >;
         };
 
@@ -155,7 +155,7 @@
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-                     &none  &none  &none  &none  &none  &none
+                     &none  &none  &to 9  &none  &none  &none
             >;
         };
 
@@ -197,9 +197,9 @@
 
         NumbersAndArrows {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6     &trans  &trans  &trans  &trans  &trans  &trans
-&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp UP_ARROW    &none            &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &none         &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6     &trans  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0    &kp UP_ARROW    &none            &trans  &trans  &trans  &trans  &trans  &trans
+&none         &none         &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
                                             &none           &none           &trans           &trans  &trans  &trans
             >;
         };

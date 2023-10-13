@@ -80,24 +80,28 @@
             key-positions = <24 1>;
             slow-release;
             layers = <0>;
+            timeout-ms = <500>;
         };
 
         Photoshop_Dublicate {
             bindings = <&kp LA(J)>;
             key-positions = <36 16>;
             layers = <0>;
+            timeout-ms = <500>;
         };
 
         Photoshop_ZoomIn {
             bindings = <&kp LC(MINUS)>;
             key-positions = <29 24>;
             layers = <0>;
+            timeout-ms = <500>;
         };
 
         Photoshop_ClippingMask {
             bindings = <&kp LC(LA(G))>;
             key-positions = <24 36 15>;
             layers = <0>;
+            timeout-ms = <500>;
         };
     };
 	
@@ -116,10 +120,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp KP_ENTER  &kp I  &kp E     &kp SPACE  &mt LS(LC(J)) R  &none  &none  &none  &none  &none  &none
-&kp LSHFT  &kp LC(A)     &kp S  &kp B     &kp D      &kp G            &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp Z         &kp X  &kp C     &kp V      &kp LC(PLUS)     &none  &none  &none  &none  &none  &none
-                                &kp LALT  &mo 1      &mo 8            &none  &none  &none
+&kp ESC    &mt BACKSPACE ENTER  &kp I        &kp E     &kp SPACE  &mt R LC(J)   &none  &none  &none  &none  &none  &none
+&kp LSHFT  &kp LC(A)            &mt S LC(T)  &kp Q     &kp D      &kp G         &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp Z                &kp X        &kp C     &kp V      &kp LC(PLUS)  &none  &none  &none  &none  &none  &none
+                                             &kp LALT  &mo 1      &mo 8         &none  &none  &none
             >;
         };
 
@@ -131,9 +135,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LC(Y)         &mt F LC(H)  &kp LS(LC(COMMA))  &kp F5             &kp LS(LA(LC(H)))    &mt LC(L) LS(LA(LC(L)))  &none  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT    &none        &kp LS(M)          &kp LS(LC(M))      &mt LC(F) LA(LC(A))  &mt LC(U) LS(LC(U))      &none  &none  &none  &none  &none  &none
-&kp LEFT_CONTROL  &kp L        &kp LS(LC(X))      &mt LC(F2) LC(N)   &none                &mt LC(M) LS(LA(LC(M)))  &none  &none  &none  &none  &none  &none
+&kp LC(Y)         &mt F LC(H)  &kp LS(LC(COMMA))  &kp F5             &kp LS(LA(LC(H)))    &mt LC(LA(LS(L))) LC(L)  &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT    &none        &kp LS(M)          &kp LS(LC(M))      &mt LC(F) LA(LC(A))  &mt LC(LS(U)) LC(U)      &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &kp L        &kp LS(LC(X))      &mt LC(N) LS(F2)   &none                &mt LS(LA(LC(M))) LC(M)  &none  &none  &none  &none  &none  &none
                                                   &kp LS(LA(LC(G)))  &trans               &to 9                    &none  &none  &none
             >;
         };
@@ -201,9 +205,9 @@
         NumbersAndArrows {
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6     &trans  &trans  &trans  &trans  &trans  &trans
-&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp UP_ARROW    &kp RIGHT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp COMMA     &kp DOT       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
-                                            &kp QUESTION    &kp BSLH        &trans           &trans  &trans  &trans
+&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp UP_ARROW    &none            &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &none         &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
+                                            &none           &none           &trans           &trans  &trans  &trans
             >;
         };
 

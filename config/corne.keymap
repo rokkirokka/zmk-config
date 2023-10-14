@@ -80,7 +80,7 @@
         compatible = "zmk,combos";
 
         Photoshop_ZoomIn {
-            bindings = <&kp LEFT>;
+            bindings = <&kp LC(MINUS)>, <&partial-hold-position 24>;
             key-positions = <29 24>;
             layers = <0>;
             timeout-ms = <200>;

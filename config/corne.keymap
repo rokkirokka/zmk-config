@@ -113,17 +113,6 @@
             timeout-ms = <200>;
             layers = <0>;
         };
-		
-		TestCombo {
-			timeout-ms = <200>;
-			key-positions = <24 28>;
-			bindings
-			= <&kp LEFT>
-			, <&partial-hold-position 28 &kp P>
-			, <&partial-hold-position 24>
-			;
-        };
-		
     };
 
     keymap {

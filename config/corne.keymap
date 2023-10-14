@@ -113,6 +113,28 @@
             timeout-ms = <200>;
             layers = <0>;
         };
+
+        Test01 {
+            bindings = <&kp A>;
+            key-positions = <12 0>;
+            timeout-ms = <200>;
+            layers = <2>;
+        };
+
+        Test02 {
+            bindings = <&kp B>;
+            key-positions = <12 1>;
+            timeout-ms = <200>;
+            slow-release;
+            layers = <2>;
+        };
+
+        Test03 {
+            bindings = <&kp C>;
+            key-positions = <12 2>;
+            timeout-ms = <200>;
+            layers = <2>;
+        };
     };
 
     keymap {

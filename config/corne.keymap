@@ -80,10 +80,13 @@
         compatible = "zmk,combos";
 
         Photoshop_ZoomIn {
-            bindings = <&kp LC(MINUS)>;
-            key-positions = <29 24>;
-            layers = <0>;
-            timeout-ms = <200>;
+	    timeout-ms = <200>;
+	    layers = <0>;
+	    key-positions = <29 24>;
+            bindings = <&kp LC(MINUS)>
+        	, <&partial-hold-position 24 &kp LC(MINUS)> //Zoom out
+        	, <&partial-hold-position 29> // defaults to &kp CTRL
+        	;
         };
 
         Photoshop_ClippingMask {

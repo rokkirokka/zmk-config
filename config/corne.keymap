@@ -184,7 +184,7 @@
 &none  &none  &none          &kp F5  &none  &kp LS(L)  &none  &none  &none  &none  &none  &none
 &none  &none  &kp M          &none   &none  &kp LS(U)  &none  &none  &none  &none  &none  &none
 &none  &none  &kp LS(LG(X))  &none   &none  &none      &none  &none  &none  &none  &none  &none
-                             &none   &none  &to 9      &none  &none  &none
+                             &trans  &none  &to 9      &none  &none  &none
             >;
         };
 

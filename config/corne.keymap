@@ -86,13 +86,6 @@
             timeout-ms = <200>;
         };
 
-        Photoshop_ClippingMask {
-            bindings = <&kp LC(LA(G))>;
-            key-positions = <24 36 15>;
-            layers = <0>;
-            timeout-ms = <500>;
-        };
-
         Photoshop_Mask_Selection {
             bindings = <&kp LS(LA(LC(P)))>;
             key-positions = <24 15>;

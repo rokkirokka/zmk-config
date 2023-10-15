@@ -152,19 +152,19 @@
 
         ArtStudio_01 {
             bindings = <
-&kp ESC    &kp RET  &kp I  &kp E     &kp J  &mt LC(J) LS(LC(B))  &none  &none  &none  &none  &none  &none
-&kp LSHFT  &kp A    &kp S  &mt Q W   &kp D  &kp G                &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp Z    &kp X  &kp C     &kp V  &none                &none  &none  &none  &none  &none  &none
-                           &kp LALT  &mo 3  &mo 8                &none  &none  &none
+&kp ESC    &kp RET  &kp I  &kp E     &kp J  &mt LC(LS(P)) LS(LC(B))  &none  &none  &none  &none  &none  &none
+&kp LSHFT  &kp A    &kp S  &mt Q W   &kp D  &kp G                    &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp Z    &kp X  &kp C     &kp V  &none                    &none  &none  &none  &none  &none  &none
+                           &kp LALT  &mo 3  &mo 8                    &none  &none  &none
             >;
         };
 
         ArtStudio_02 {
             bindings = <
-&none  &mt LS(H) LS(S)  &none          &kp LG(NUMBER_1)               &mt LS(LA(B)) LS(B)        &mt LA(LS(L)) LS(L)      &none  &none  &none  &none  &none  &none
-&none  &none            &kp M          &mt LG(NUMBER_2) LG(NUMBER_3)  &mt LC(LA(RIGHT_BRACE)) B  &mt LS(LA(U)) LS(U)      &none  &none  &none  &none  &none  &none
-&none  &none            &kp LS(LG(X))  &kp LC(N)                      &kp LS(T)                  &mt LS(LA(LC(M))) LC(M)  &none  &none  &none  &none  &none  &none
-                                       &kt LA(LC(G))                  &none                      &to 9                    &none  &none  &none
+&none  &mt LS(H) LS(S)  &none          &kp DLLR             &mt LS(LC(B)) LS(B)  &mt LS(LC(L)) LS(L)  &none  &none  &none  &none  &none  &none
+&none  &none            &kp M          &mt LS(H) LS(LC(H))  &mt LS(K) LS(LC(K))  &mt LS(LC(U)) LS(U)  &none  &none  &none  &none  &none  &none
+&none  &none            &kp LS(LG(X))  &kp LC(N)            &kp LS(T)            &mt LS(LC(K)) LC(K)  &none  &none  &none  &none  &none  &none
+                                       &kt LS(LC(G))        &none                &to 9                &none  &none  &none
             >;
         };
 

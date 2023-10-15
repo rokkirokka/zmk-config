@@ -79,9 +79,9 @@
     combos {
         compatible = "zmk,combos";
 
-        Photoshop_ZoomIn {
-            bindings = <&kp LC(MINUS)>;
-            key-positions = <29 24>;
+        Photoshop_Copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <24 27>;
             layers = <0>;
             timeout-ms = <200>;
         };
@@ -91,20 +91,6 @@
             key-positions = <24 36 15>;
             layers = <0>;
             timeout-ms = <500>;
-        };
-
-        Photoshop_save {
-            bindings = <&kp LC(S)>;
-            key-positions = <24 14>;
-            timeout-ms = <200>;
-            layers = <0>;
-        };
-
-        Photoshop_SaveAs {
-            bindings = <&kp LC(LS(S))>;
-            key-positions = <24 12 14>;
-            timeout-ms = <200>;
-            layers = <0>;
         };
 
         Photoshop_Mask_Selection {
@@ -148,10 +134,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &mt BACKSPACE ENTER  &kp I        &kp E      &kp C  &mt R LC(J)   &none  &none  &none  &none  &none  &none
-&kp LSHFT  &kp A                &mt S LC(T)  &kp Q      &kp D  &kp G         &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp Z                &kp X        &kp SPACE  &kp V  &kp LC(PLUS)  &none  &none  &none  &none  &none  &none
-                                             &kp LALT   &mo 1  &mo 8         &none  &none  &none
+&kp ESC    &mt BACKSPACE ENTER  &kp I        &kp E      &kp C  &mt R LC(J)  &none  &none  &none  &none  &none  &none
+&kp LSHFT  &kp A                &mt S LC(T)  &kp Q      &kp D  &kp G        &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp Z                &kp X        &kp SPACE  &kp V  &kp LC(DOT)  &none  &none  &none  &none  &none  &none
+                                             &kp LALT   &mo 1  &mo 8        &none  &none  &none
             >;
         };
 

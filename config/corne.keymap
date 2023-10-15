@@ -161,10 +161,10 @@
 
         ArtStudio_02 {
             bindings = <
-&none  &mt LS(H) LS(S)  &none          &kp LG(NUMBER_1)         &mt LS(LA(B)) LS(B)        &mt LA(LS(L)) LS(L)  &none  &none  &none  &none  &none  &none
-&none  &none            &kp M          &mt LC(LG(M)) LC(LS(M))  &mt LC(LA(RIGHT_BRACE)) B  &mt LS(LA(U)) LS(U)  &none  &none  &none  &none  &none  &none
-&none  &none            &kp LS(LG(X))  &kp LC(N)                &kp LS(T)                  &kt LS(T)            &none  &none  &none  &none  &none  &none
-                                       &kt LA(LC(G))            &none                      &to 9                &none  &none  &none
+&none  &mt LS(H) LS(S)  &none          &kp LG(NUMBER_1)               &mt LS(LA(B)) LS(B)        &mt LA(LS(L)) LS(L)      &none  &none  &none  &none  &none  &none
+&none  &none            &kp M          &mt LG(NUMBER_2) LG(NUMBER_3)  &mt LC(LA(RIGHT_BRACE)) B  &mt LS(LA(U)) LS(U)      &none  &none  &none  &none  &none  &none
+&none  &none            &kp LS(LG(X))  &kp LC(N)                      &kp LS(T)                  &mt LS(LA(LC(M))) LC(M)  &none  &none  &none  &none  &none  &none
+                                       &kt LA(LC(G))                  &none                      &to 9                    &none  &none  &none
             >;
         };
 

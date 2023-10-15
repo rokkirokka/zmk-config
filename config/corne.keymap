@@ -160,10 +160,10 @@
 
         ArtStudio_02 {
             bindings = <
-&none  &mt LS(H) LS(S)  &none          &kp DLLR             &mt LS(LC(B)) LS(B)  &mt LS(LC(L)) LS(L)  &none  &none  &none  &none  &none  &none
-&none  &none            &kp M          &mt LS(H) LS(LC(H))  &mt LS(O) LS(LC(O))  &mt LS(LC(U)) LS(U)  &none  &none  &none  &none  &none  &none
-&none  &none            &kp LS(LC(Y))  &kp LC(N)            &kp LS(T)            &mt LS(LC(K)) LC(K)  &none  &none  &none  &none  &none  &none
-                                       &kp LS(LC(G))        &none                &to 9                &none  &none  &none
+&none  &mt LS(N9) LS(W)  &mt LS(LC(NUMBER_1)) LS(LC(NUMBER_2))  &kp DLLR             &mt LS(LC(B)) LS(B)  &mt LS(LC(L)) LS(L)  &none  &none  &none  &none  &none  &none
+&none  &none             &kp M                                  &mt LS(H) LS(LC(H))  &mt LS(O) LS(LC(O))  &mt LS(LC(U)) LS(U)  &none  &none  &none  &none  &none  &none
+&none  &none             &kp LS(LC(Y))                          &kp LC(N)            &kp LS(T)            &mt LS(LC(K)) LC(K)  &none  &none  &none  &none  &none  &none
+                                                                &kp LS(LC(G))        &none                &to 9                &none  &none  &none
             >;
         };
 

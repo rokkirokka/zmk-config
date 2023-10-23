@@ -127,10 +127,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &mt BACKSPACE ENTER  &kp I        &kp E        &none  &mt R LC(J)  &none  &none  &none  &none  &none  &none
-&kp LSHFT  &kp A                &mt LC(T) S  &kp Q        &kp D  &kp G        &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp Z                &kp X        &mt SPACE C  &kp V  &kp LC(DOT)  &none  &none  &none  &none  &none  &none
-                                             &kp LALT     &mo 1  &mo 8        &none  &none  &none
+&kp ESC    &mt BACKSPACE ENTER  &kp I        &kp E                      &kp Q  &mt R LC(J)  &none  &none  &none  &none  &none  &none
+&kp LSHFT  &kp A                &mt LC(T) S  &mt LS(LC(F2)) LS(LC(F3))  &kp D  &kp G        &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp Z                &kp X        &mt SPACE C                &kp V  &kp LC(DOT)  &none  &none  &none  &none  &none  &none
+                                             &kp LALT                   &mo 1  &mo 8        &none  &none  &none
             >;
         };
 

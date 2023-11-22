@@ -182,10 +182,10 @@
 
         PaintStorm_02 {
             bindings = <
-&none  &none    &mt LS(LC(D)) LC(Y)          &kp F5         &none        &kp LC(L)  &trans  &trans  &trans  &trans  &trans  &trans
-&none  &none    &kp M                        &mt F2 LS(M)   &mt LS(H) H  &kp LC(U)  &trans  &trans  &trans  &trans  &trans  &trans
-&none  &mt T L  &mt LS(LC(LA(Q))) LS(LC(Q))  &mt ESC LS(N)  &none        &none      &trans  &trans  &trans  &trans  &trans  &trans
-                                             &none          &none        &to 9      &trans  &trans  &trans
+&none  &none    &mt LS(LC(D)) LC(Y)          &kp F5            &none        &kp LC(L)  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none    &mt M LS(M)                  &mt F2 LS(LC(M))  &mt LS(H) H  &kp LC(U)  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &mt T L  &mt LS(LC(LA(Q))) LS(LC(Q))  &mt LC(N) LS(N)   &none        &none      &trans  &trans  &trans  &trans  &trans  &trans
+                                             &none             &none        &to 9      &trans  &trans  &trans
             >;
         };
 

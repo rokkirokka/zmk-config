@@ -26,6 +26,7 @@
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
         horzFlip: horzFlip {
             compatible = "zmk,behavior-macro";
             label = "PS_horzFlip";
@@ -38,6 +39,7 @@
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
         canvasSize: canvasSize {
             compatible = "zmk,behavior-macro";
             label = "PS_canvasSize";
@@ -50,6 +52,7 @@
                 <&macro_release>,
                 <&kp LALT &kp LCTRL>;
         };
+
         imageSize: imageSize {
             compatible = "zmk,behavior-macro";
             label = "PS_imageSize";
@@ -62,6 +65,7 @@
                 <&macro_release>,
                 <&kp LCTRL &kp LALT>;
         };
+
         smartObject: smartObject {
             compatible = "zmk,behavior-macro";
             label = "PS_smartObject";
@@ -169,10 +173,10 @@
 
         PaintStorm_01 {
             bindings = <
-&kp N1     &kp N2       &kp N5      &kp N7    &kp N8  &kp N0         &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans       &trans      &trans    &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
-&horzFlip  &canvasSize  &imageSize  &kp L     &kp M   &kp ENTER      &trans  &trans  &trans  &trans  &trans  &trans
-                                    &kp LGUI  &trans  &to 0          &trans  &trans  &trans
+&kp ESC     &mt ENTER BACKSPACE  &kp I  &kp E         &kp Q   &kp J    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHIFT  &kp A                &kp S  &kp Q         &trans  &kp G    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL   &kp Z                &kp X  &kp C         &kp V   &kp DOT  &trans  &trans  &trans  &trans  &trans  &trans
+                                        &kp LEFT_ALT  &mo 5   &mo 8    &trans  &trans  &trans
             >;
         };
 

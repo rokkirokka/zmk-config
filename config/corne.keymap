@@ -175,7 +175,7 @@
             bindings = <
 &kp ESC     &mt ENTER BACKSPACE  &kp I  &kp E         &kp R   &kp J    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHIFT  &kp A                &kp S  &kp Q         &trans  &kp G    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL   &kp Z                &kp X  &kp C         &kp V   &kp DOT  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL   &kp Z                &kp X  &mt SPACE C   &kp V   &kp DOT  &trans  &trans  &trans  &trans  &trans  &trans
                                         &kp LEFT_ALT  &mo 5   &mo 8    &trans  &trans  &trans
             >;
         };

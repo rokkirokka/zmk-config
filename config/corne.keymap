@@ -173,7 +173,7 @@
 
         PaintStorm_01 {
             bindings = <
-&kp ESC     &mt ENTER BACKSPACE  &kp I  &kp E         &kp Q   &kp J    &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC     &mt ENTER BACKSPACE  &kp I  &kp E         &kp R   &kp J    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHIFT  &kp A                &kp S  &kp Q         &trans  &kp G    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL   &kp Z                &kp X  &kp C         &kp V   &kp DOT  &trans  &trans  &trans  &trans  &trans  &trans
                                         &kp LEFT_ALT  &mo 5   &mo 8    &trans  &trans  &trans
@@ -182,10 +182,10 @@
 
         PaintStorm_02 {
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E         &kp R  &kp T  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &kp G  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &kp B  &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp LEFT_ALT  &mo 6  &mo 7  &trans  &trans  &trans
+&none  &none    &mt LS(LC(D)) LC(Y)          &kp F5     &none        &kp LC(L)  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none    &kp M                        &kp LS(M)  &mt LS(H) H  &kp LC(U)  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &mt T L  &mt LS(LC(LA(Q))) LS(LC(Q))  &none      &none        &none      &trans  &trans  &trans  &trans  &trans  &trans
+                                             &none      &none        &to 9      &trans  &trans  &trans
             >;
         };
 

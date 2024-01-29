@@ -8,9 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    tapping-term-ms = <170>;
-};
+&mt { tapping-term-ms = <170>; };
 
 / {
     macros {
@@ -146,10 +144,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&mt LC(LS(U)) LC(Y)  &mt LC(H) F  &mt LC(RS(COMMA)) LC(R)  &mt LA(LC(G)) F5     &mt LC(LS(LA(H))) LC(B)       &mt LC(LA(LS(L))) LC(L)  &none  &none  &none  &none  &none  &none
-&none                &none        &kp LS(M)                &mt LC(P) LS(LC(M))  &mt LC(LA(LEFT_BRACE)) LC(F)  &mt LC(LS(LA(U))) LC(U)  &none  &none  &none  &none  &none  &none
-&none                &kp L        &kp LS(LC(X))            &mt LC(N) LS(F2)     &none                         &mt LS(LA(LC(M))) LC(M)  &none  &none  &none  &none  &none  &none
-                                                           &kp LS(LA(LC(G)))    &trans                        &to 9                    &none  &none  &none
+&mt LC(LS(U)) LC(Y)  &mt LC(H) F       &mt LC(RS(COMMA)) LC(R)  &mt LA(LC(G)) F5     &mt LC(LS(LA(H))) LC(B)       &mt LC(LA(LS(L))) LC(L)  &none  &none  &none  &none  &none  &none
+&none                &mt I LS(LC(F4))  &kp LS(M)                &mt LC(P) LS(LC(M))  &mt LC(LA(LEFT_BRACE)) LC(F)  &mt LC(LS(LA(U))) LC(U)  &none  &none  &none  &none  &none  &none
+&none                &kp L             &kp LS(LC(X))            &mt LC(N) LS(F2)     &none                         &mt LS(LA(LC(M))) LC(M)  &none  &none  &none  &none  &none  &none
+                                                                &kp LS(LA(LC(G)))    &trans                        &to 9                    &none  &none  &none
             >;
         };
 

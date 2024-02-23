@@ -81,9 +81,9 @@
     combos {
         compatible = "zmk,combos";
 
-        Photoshop_Copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <24 27>;
+        Photoshop_SaveTGA {
+            bindings = <&kp LC(LS(F11))>;
+            key-positions = <24 25 26>;
             layers = <0>;
             timeout-ms = <200>;
         };

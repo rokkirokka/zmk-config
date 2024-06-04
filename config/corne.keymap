@@ -122,7 +122,7 @@
         compatible = "zmk,keymap";
 
         Photoshop_01 {
-            display-name = "PHOTO1";
+            display-name = "PHOTO";
             bindings = <
 &kp ESC    &mt BACKSPACE ENTER  &kp I        &kp E                      &kp Q  &mt R LC(J)  &none  &none  &none  &none  &none  &none
 &kp LSHFT  &kp A                &mt LC(T) S  &mt LS(LC(F2)) LS(LC(F3))  &kp D  &kp G        &none  &none  &none  &none  &none  &none
@@ -132,7 +132,7 @@
         };
 
         Photoshop_02 {
-            display-name = "PHOTO2";
+            display-name = "PHOTO";
             bindings = <
 &mt LC(LS(U)) LC(Y)  &mt LC(H) F       &mt LC(RS(COMMA)) LC(R)  &mt LA(LC(G)) F5     &mt LC(LS(LA(H))) LC(B)       &mt LC(LA(LS(L))) LC(L)  &none  &none  &none  &none  &none  &none
 &none                &mt I LS(LC(F4))  &kp LS(M)                &mt LC(P) LS(LC(M))  &mt LC(LA(LEFT_BRACE)) LC(F)  &mt LC(LS(LA(U))) LC(U)  &none  &none  &none  &none  &none  &none
@@ -142,7 +142,7 @@
         };
 
         ArtStudio_01 {
-            display-name = "ARTS 1";
+            display-name = "ARTS";
             bindings = <
 &kp ESC    &kp RET  &kp I  &kp E     &kp J  &mt LC(LS(P)) LS(LC(W))  &none  &none  &none  &none  &none  &none
 &kp LSHFT  &kp A    &kp S  &mt Q W   &kp D  &kp G                    &none  &none  &none  &none  &none  &none
@@ -152,7 +152,7 @@
         };
 
         ArtStudio_02 {
-            display-name = "ARTS 2";
+            display-name = "ARTS";
             bindings = <
 &none  &mt LS(N9) LS(W)  &mt LS(LC(NUMBER_1)) LS(LC(NUMBER_2))  &kp DLLR             &mt LS(LC(B)) LS(B)  &mt LS(LC(L)) LS(L)  &none  &none  &none  &none  &none  &none
 &none  &none             &kp M                                  &mt LS(H) LS(LC(H))  &mt LS(O) LS(LC(O))  &mt LS(LC(U)) LS(U)  &none  &none  &none  &none  &none  &none
@@ -162,7 +162,7 @@
         };
 
         PaintStorm_01 {
-            display-name = "STORM 1";
+            display-name = "STORM";
             bindings = <
 &kp ESC     &mt ENTER BACKSPACE  &kp I  &kp E         &kp R   &kp J    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHIFT  &kp A                &kp S  &kp Q         &trans  &kp G    &trans  &trans  &trans  &trans  &trans  &trans
@@ -172,7 +172,7 @@
         };
 
         PaintStorm_02 {
-            display-name = "STORM 2";
+            display-name = "STORM";
             bindings = <
 &none  &none    &trans         &mt F2 F5        &none        &kp LC(L)  &trans  &trans  &trans  &trans  &trans  &trans
 &none  &none    &kp M          &kp LS(LC(M))    &mt LS(H) H  &kp LC(U)  &trans  &trans  &trans  &trans  &trans  &trans
@@ -182,7 +182,7 @@
         };
 
         Max_01 {
-            display-name = "3DSMAX";
+            display-name = "3DS";
             bindings = <
 &kp F1     &kp Y  &kp U  &kp I             &kp O      &kp P          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp H  &kp J  &kp K             &kp L      &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
@@ -192,7 +192,7 @@
         };
 
         Max_02 {
-            display-name = "3DSMAX";
+            display-name = "3DS";
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
@@ -212,7 +212,7 @@
         };
 
         Keyboard_Settings {
-            display-name = "SETTING";
+            display-name = "SET";
             bindings = <
 &to 0       &to 2         &to 4         &to 6         &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans

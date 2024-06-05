@@ -135,7 +135,7 @@
                                              &kp LALT                   &mo 1  &mo 8        &none  &none  &none
             >;
 
-            label = "PHOTO";
+            label = "PHOTO1";
         };
 
         Photoshop_02 {
@@ -152,7 +152,7 @@
                                                                 &kp LS(LA(LC(G)))    &trans                        &to 9                    &none  &none  &none
             >;
 
-            label = "PHOTO";
+            label = "PHOTO2";
         };
 
         ArtStudio_01 {
@@ -163,7 +163,7 @@
                            &kp LALT  &mo 3  &mo 8                    &none  &none  &none
             >;
 
-            label = "ARTS";
+            label = "ARTS1";
         };
 
         ArtStudio_02 {
@@ -174,7 +174,7 @@
                                                                 &kp LS(LC(G))        &none                &to 9                &none  &none  &none
             >;
 
-            label = "ARTS";
+            label = "ARTS2";
         };
 
         PaintStorm_01 {
@@ -185,7 +185,7 @@
                                         &kp LEFT_ALT  &mo 5   &mo 8    &trans  &trans  &trans
             >;
 
-            label = "STORM";
+            label = "STORM1";
         };
 
         PaintStorm_02 {
@@ -196,7 +196,7 @@
                                &none            &none        &to 9      &trans  &trans  &trans
             >;
 
-            label = "STORM";
+            label = "STORM2";
         };
 
         Max_01 {
@@ -207,7 +207,7 @@
                          &kp LCTRL         &trans     &mo 0          &trans  &trans  &trans
             >;
 
-            label = "3DSMAX";
+            label = "3DSMAX1";
         };
 
         Max_02 {
@@ -218,7 +218,7 @@
                      &none  &none  &none  &none  &none  &none
             >;
 
-            label = "3DSMAX";
+            label = "3DSMAX2";
         };
 
         NumbersAndArrows {

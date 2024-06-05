@@ -135,7 +135,7 @@
                                              &kp LALT                   &mo 1  &mo 8        &none  &none  &none
             >;
 
-            label = "PHO";
+            label = "PHOTO";
         };
 
         Photoshop_02 {
@@ -151,6 +151,8 @@
 &none                &kp L             &kp LS(LC(X))            &mt LC(N) LS(F2)     &none                         &mt LS(LA(LC(M))) LC(M)  &none  &none  &none  &none  &none  &none
                                                                 &kp LS(LA(LC(G)))    &trans                        &to 9                    &none  &none  &none
             >;
+
+            label = "PHOTO";
         };
 
         ArtStudio_01 {
@@ -160,6 +162,8 @@
 &kp LCTRL  &kp Z    &kp X  &kp C     &kp V  &none                    &none  &none  &none  &none  &none  &none
                            &kp LALT  &mo 3  &mo 8                    &none  &none  &none
             >;
+
+            label = "ARTS";
         };
 
         ArtStudio_02 {
@@ -169,6 +173,8 @@
 &none  &none             &kp LS(LC(Y))                          &kp LC(N)            &kp LS(T)            &mt LS(LC(K)) LC(K)  &none  &none  &none  &none  &none  &none
                                                                 &kp LS(LC(G))        &none                &to 9                &none  &none  &none
             >;
+
+            label = "ARTS";
         };
 
         PaintStorm_01 {
@@ -178,6 +184,8 @@
 &kp LCTRL   &kp Z                &kp X  &mt SPACE C   &kp V   &kp DOT  &trans  &trans  &trans  &trans  &trans  &trans
                                         &kp LEFT_ALT  &mo 5   &mo 8    &trans  &trans  &trans
             >;
+
+            label = "STORM";
         };
 
         PaintStorm_02 {
@@ -187,6 +195,8 @@
 &none  &mt T L  &kp LS(LC(Q))  &mt LC(N) LS(N)  &none        &none      &trans  &trans  &trans  &trans  &trans  &trans
                                &none            &none        &to 9      &trans  &trans  &trans
             >;
+
+            label = "STORM";
         };
 
         Max_01 {
@@ -196,6 +206,8 @@
 &kp SPACE  &kp N  &kp M  &kp GREATER_THAN  &kp UNDER  &kp ENTER      &trans  &trans  &trans  &trans  &trans  &trans
                          &kp LCTRL         &trans     &mo 0          &trans  &trans  &trans
             >;
+
+            label = "3DSMAX";
         };
 
         Max_02 {
@@ -205,6 +217,8 @@
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
                      &none  &none  &none  &none  &none  &none
             >;
+
+            label = "3DSMAX";
         };
 
         NumbersAndArrows {
@@ -214,6 +228,8 @@
 &none         &none         &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
                                             &none           &none           &trans           &trans  &trans  &trans
             >;
+
+            label = "NUM";
         };
 
         Keyboard_Settings {
@@ -223,6 +239,8 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans        &trans        &trans        &trans  &trans  &trans
             >;
+
+            label = "SETTING";
         };
     };
 };

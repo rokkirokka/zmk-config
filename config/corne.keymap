@@ -201,10 +201,10 @@
 
         Max_01 {
             bindings = <
-&kp F1     &kp Y  &kp U  &kp I             &kp O      &kp P          &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp Y  &kp U  &kp I             &kp O      &kp P          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp H  &kp J  &kp K             &kp L      &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans
-&kp SPACE  &kp N  &kp M  &kp GREATER_THAN  &kp UNDER  &kp ENTER      &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp LCTRL         &trans     &mo 0          &trans  &trans  &trans
+&kp LCTRL  &kp N  &kp M  &kp GREATER_THAN  &kp UNDER  &kp ENTER      &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp LEFT_ALT      &mo 7      &mo 8          &trans  &trans  &trans
             >;
 
             label = "3DSMAX1";
@@ -215,7 +215,7 @@
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-                     &none  &none  &none  &none  &none  &none
+                     &none  &none  &to 9  &none  &none  &none
             >;
 
             label = "3DSMAX2";

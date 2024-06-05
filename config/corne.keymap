@@ -134,6 +134,8 @@
 &kp LCTRL  &kp Z                &kp X        &mt SPACE C                &kp V  &kp LC(DOT)  &none  &none  &none  &none  &none  &none
                                              &kp LALT                   &mo 1  &mo 8        &none  &none  &none
             >;
+
+            label = "PHO";
         };
 
         Photoshop_02 {

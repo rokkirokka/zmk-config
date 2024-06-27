@@ -160,7 +160,7 @@
             bindings = <
 &kp ESC    &kp RET  &kp I  &kp E     &kp J  &mt LC(LS(P)) LS(LC(W))  &none  &none  &none  &none  &none  &none
 &kp LSHFT  &kp A    &kp S  &mt Q W   &kp D  &kp G                    &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp Z    &kp X  &kp C     &kp V  &none                    &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp Z    &kp X  &kp C     &kp V  &kp SPACE                &none  &none  &none  &none  &none  &none
                            &kp LALT  &mo 3  &mo 8                    &none  &none  &none
             >;
 
